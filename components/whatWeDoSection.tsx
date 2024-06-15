@@ -10,10 +10,10 @@ function getRandomArbitrary(min: number, max: number) {
 }
 
 export default function WhatWeDo() {
-  const container = useRef<HTMLDivElement | null>(null);
-  const scrubDelays = [1, 2, 3, 4, 5];
-  const directions = [100, -100];
   gsap.registerPlugin(ScrollTrigger);
+  const container = useRef<HTMLDivElement | null>(null);
+  const directions1 = [1, 3, 5, 7, 9];
+  const elementsToJump = [2, 6, 10, 11];
 
   let images = [];
   for (let i = 1; i < 12; i++) {
@@ -22,14 +22,13 @@ export default function WhatWeDo() {
   useGSAP(
     () => {
       for (let i = 1; i < 12; i++) {
-        if (getRandomArbitrary(0, 3)) {
+        if (!elementsToJump.includes(i)) {
           gsap.to(`.image${i}`, {
             scrollTrigger: {
               trigger: `.image${i}`,
-              // toggleActions: "play pause reverse pause",
-              scrub: scrubDelays[getRandomArbitrary(0, 5)],
+              scrub: 1,
             },
-            y: directions[getRandomArbitrary(0, 2)],
+            y: directions1.includes(i) ? -80 : -150,
           });
         }
       }
@@ -39,12 +38,12 @@ export default function WhatWeDo() {
   );
   return (
     <section className="w-[95vw] bg-white rounded-4xl flex flex-col items-center space-y-12 z-40 h-[400vh]">
-      <h1 className="font-general-sans text-3xl text-black mt-6">
+      <h1 className="font-general-sans text-5xl text-black mt-6">
         What we do?
       </h1>
       <p className="text-7xl">Rhinoplasty as a Specialty</p>
       <div
-        className="flex flex-row space-x-5 h-[70vh] items-center"
+        className="flex flex-row space-x-5 items-center pt-40"
         ref={container}
       >
         {images.map((image, i) => (
