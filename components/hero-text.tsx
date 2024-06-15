@@ -1,24 +1,27 @@
 export default function HeroText() {
   return (
-    <section className="absolute w-full mt-32 px-7 overflow-hidden">
+    <div className="absolute w-full mt-32 px-3 md:px-7 overflow-hidden">
       <h1
-        className="h-full w-full flex flex-col justify-center text-9xl leading-none
+        className="h-full w-full flex flex-col justify-center items-center md:items-start text-7xl sm:text-8xl md:text-[7.3rem] lg:text-9xl 2xl:text-[11rem] leading-none
 z-10 font-general-sans space-y-5"
       >
-        <span className="text-base font-tanker">
+        <p className="text-sm font-tanker text-off-dark">
           Premiere Destination for Designer Rhinoplasty
-        </span>
+        </p>
         <span>The brand</span>
         <span>behind</span>
-        <span className="text-base font-tanker">
+        <p className="text-sm font-tanker hidden md:flex text-off-dark">
           Entrust your face to a rhinoplasty specialist in Montreal.
-        </span>
-        <div className="flex flex-col items-center">
-          <span>
-            <span className="font-tanker">beautiful</span> noses
-          </span>
+        </p>
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <span className="font-tanker">beautiful</span>{" "}
+          <br className="md:hidden" />
+          <span className="ml-5">noses</span>
         </div>
+        <p className="text-sm font-tanker md:hidden text-off-dark">
+          Entrust your face to a rhinoplasty specialist in Montreal.
+        </p>
       </h1>
-    </section>
+    </div>
   );
 }

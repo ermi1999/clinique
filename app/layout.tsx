@@ -81,11 +81,10 @@ export default function RootLayout({
          ${cabinetBold.variable} ${cabinetMedium.variable} ${generalSansRegular.variable}
          ${generalSansBold.variable} ${cabinetLight.variable} ${generalSansItalic.variable} 
          ${generalSansSemiBold.variable} ${generalSansMedium.variable} ${generalSansLight.variable} 
-         ${generalSansVariable.variable} ${tanker.variable} overflow-hidden overflow-y-auto bg-white`}
+         ${generalSansVariable.variable} ${tanker.variable} overflow-hidden overflow-y-auto bg-off-white`}
       >
         <Navbar />
         {children}
-        <div className="h-[100vh] w-full rounded-t-2xl bg-dark"></div>
       </body>
     </html>
   );

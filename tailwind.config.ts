@@ -24,6 +24,9 @@ const config: Config = {
         "general-sans-variable": ["var(--generalsans-variable)"],
         tanker: ["var(--tanker)"],
       },
+      borderRadius: {
+        "4xl": "3rem",
+      },
       keyframes: {
         spin: {
           from: {
@@ -43,10 +46,11 @@ const config: Config = {
       colors: {
         dark: "#0D0D0D",
         "off-dark": "#3C3D40",
+        "grey-dark": "#BFBFBF",
         brown: "#260101",
         "off-brown": "#402A1E",
-        white: "#D9D9D9",
-        "off-white": "#BFBFBF",
+        "grey-white": "#D9D9D9",
+        "off-white": "#E7E6E9",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
