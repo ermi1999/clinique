@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.what-we-do-section {
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+}

@@ -24,6 +24,9 @@ const config: Config = {
         "general-sans-variable": ["var(--generalsans-variable)"],
         tanker: ["var(--tanker)"],
       },
+      fontSize: {
+        "5xl": ["3.25rem", "1"],
+      },
       borderRadius: {
         "4xl": "3rem",
       },
