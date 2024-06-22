@@ -38,11 +38,19 @@ export default function WhatWeDo() {
   );
   return (
     <section className="flex flex-col items-center">
-      <div className="bg-white rounded-tr-4xl flex flex-col items-center space-y-12 z-40 h-[80vh] w-[95vw] what-we-do-section">
-        <h1 className="font-light text-3xl text-black mt-6">What we do?</h1>
-        <p className="text-6xl font-medium">Rhinoplasty as a Specialty</p>
+      <div className="bg-white flex flex-col items-center space-y-5 z-40 w-[100vw] md:w-[95vw] what-we-do-section pb-40 md:pb-52">
+        <h1 className="font-light text-2xl xs:text-3xl text-black mt-6">
+          What we do?
+        </h1>
+        <p className="hidden md:flex sm:text-4xl md:text-6xl">
+          Rhinoplasty as a Specialty
+        </p>
+        <p className="flex flex-col text-4xl xs:text-5xl md:hidden w-full px-5">
+          <span className="text-left">Rhinoplasty</span>
+          <span className="text-right">as a Speciality</span>
+        </p>
         <div
-          className="flex flex-row space-x-5 items-center pt-40"
+          className="flex flex-row space-x-1 md:space-x-5 items-center pt-40 md:pt-52 overflow-hidden"
           ref={container}
         >
           {images.map((image, i) => (
@@ -63,12 +71,12 @@ export default function WhatWeDo() {
           alt="cover image"
           className="w-full h-full bg-cover"
         />
-        <div className="bg-white w-[95vw] rounded-b-4xl text-5xl absolute py-10 px-10">
-          <div className="flex flex-row">
+        <div className="bg-white w-[100vw] md:w-[95vw] pb-20 rounded-b-4xl text-4xl md:text-5xl absolute px-5 md:px-10">
+          <div className="flex flex-col md:flex-row">
             <img
               src="/resources/8d29c8ba-1eee-4b9f-8.png"
               alt="a doctor doing surgery"
-              className="object-contain self-end w-32 h-32"
+              className="object-contain self-end w-24 h-24 md:h-32 md:w-32"
             />
             <div className="flex flex-col font-medium w-full space-y-5">
               <p className="flex flex-col">
@@ -79,7 +87,7 @@ export default function WhatWeDo() {
                 </span>
               </p>
               <div className="w-[90%] flex items-end justify-end">
-                <Button className="text-base font-light md:w-60">
+                <Button className="text-sm md:text-base font-light w-52 md:w-60">
                   Meet Dr.Zahi Abou Chacra
                 </Button>
               </div>
@@ -87,7 +95,7 @@ export default function WhatWeDo() {
             <img
               src="/resources/IMG_8523.jpg"
               alt="a doctor doing surgery"
-              className="object-contain self-start pl-5 h-52 w-52"
+              className="object-contain self-start pl-5 h-40 w-40 md:h-52 md:w-52"
             />
           </div>
         </div>

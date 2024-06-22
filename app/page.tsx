@@ -4,7 +4,7 @@ import WhatWeDo from "@/components/whatWeDoSection";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
-      <section className="h-[100vh] w-full flex flex-col overflow-hidden">
+      <section className="h-[80vh] md:h-[100vh] w-full flex flex-col overflow-hidden">
         <video
           src="/resources/GFBImzqp.mp4"
           autoPlay={true}

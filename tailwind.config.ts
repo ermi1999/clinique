@@ -27,6 +27,9 @@ const config: Config = {
       fontSize: {
         "5xl": ["3.25rem", "1"],
       },
+      screens: {
+        xs: { min: "400px" },
+      },
       borderRadius: {
         "4xl": "3rem",
       },
