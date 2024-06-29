@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Button from "./button";
+import Popup from "./popup";
 
 export default function Navbar() {
   return (
     <nav
-      className="fixed z-20 w-full text-black pt-3 font-general-sans rounded-b-4xl md:px-7 backdrop-blur-xl
+      className="fixed z-20 w-full pt-3 font-general-sans rounded-b-4xl md:px-7 backdrop-blur-lg bg-off-white/50
                 "
     >
       <div className="w-full flex flex-row justify-between px-4 py-2 items-center">
@@ -28,10 +29,10 @@ export default function Navbar() {
                 before:*:bg-off-dark
                 before:*:transition-all
                 before:*:duration-1000
-                before:*:ease-[cubic-bezier(.47,1.64,.38,.87)]
+                before:*:ease-in-expo
                 before:*:scale-0
                 before:*:origin-left before:*:
-                hover:before:*:scale-100 bg-grey-white rounded-xl h-[3.2rem] hidden lg:flex items-center justify-center px-4 shadow-sm"
+                hover:before:*:scale-100 h-[3.2rem] hidden lg:flex items-center justify-center px-4 font-medium"
         >
           <Link href="/drchacra" className="">
             Dr. Chacra
@@ -40,9 +41,7 @@ export default function Navbar() {
           <Link href="/">Learning center</Link>
           <Link href="/">Contact us</Link>
         </div>
-        <Button className="text-xs md:text-base shadow-sm">
-          Book a consultation
-        </Button>
+        <Popup />
       </div>
     </nav>
   );

@@ -1,4 +1,6 @@
+import BeforeAndAfter from "@/components/beforeAndAfter";
 import HeroText from "@/components/hero-text";
+import OurPhilosophy from "@/components/ourPhilosophy";
 import WhatWeDo from "@/components/whatWeDoSection";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
         <HeroText />
       </section>
       <WhatWeDo />
+      <OurPhilosophy />
+      <BeforeAndAfter />
     </main>
   );
 }

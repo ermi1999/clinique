@@ -13,10 +13,10 @@ z-10 font-general-sans space-y-5"
         <p className="text-sm font-tanker hidden md:flex text-off-dark">
           Entrust your face to a rhinoplasty specialist in Montreal.
         </p>
-        <div className="flex flex-col md:flex-row items-center justify-center">
-          <span className="font-tanker">beautiful</span>{" "}
-          <br className="md:hidden" />
-          <span className="ml-5">noses</span>
+        <div className="flex flex-col md:flex-row items-center justify-center pb-5">
+          <span className="font-bold-italic">beautiful</span>{" "}
+          {/* <br className="md:hidden" /> */}
+          <span className="ml-7">noses</span>
         </div>
         <p className="text-sm font-tanker md:hidden text-off-dark">
           Entrust your face to a rhinoplasty specialist in Montreal.

@@ -1,0 +1,17 @@
+export const photos = [
+  ["/resources/person1_before.jpg", "/resources/person1_after.jpg"],
+  ["/resources/person1_side_before.jpg", "/resources/person1_side_after.jpg"],
+  ["/resources/person2_before.jpg", "/resources/person2_after.jpg"],
+  ["/resources/person2_side_before.jpg", "/resources/person2_side_after.jpg"],
+  ["/resources/person3_side_before.jpg", "/resources/person3_side_after.jpg"],
+  ["/resources/person4_before.jpg", "/resources/person4_after.png"],
+  ["/resources/person4_side_before.jpg", "/resources/person4_side_after.png"],
+  ["/resources/person5_before.jpg", "/resources/person5_after.png"],
+  ["/resources/person5_side_before.jpg", "/resources/person5_side_after.png"],
+  ["/resources/person6_before.jpg", "/resources/person6_after.png"],
+  ["/resources/person6_side_before.jpg", "/resources/person6_side_after.jpg"],
+  ["/resources/person7_before.jpg", "/resources/person7_after.png"],
+  ["/resources/person7_side_before.jpg", "/resources/person7_side_after.jpg"],
+  ["/resources/person8_before.jpg", "/resources/person8_after.jpg"],
+  ["/resources/person9_side_before.jpg", "/resources/person9_side_after.jpg"],
+];
