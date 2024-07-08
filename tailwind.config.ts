@@ -88,6 +88,7 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         "4xl": "3rem",
+        "5xl": "4rem",
       },
       keyframes: {
         "accordion-down": {
@@ -124,6 +125,9 @@ const config = {
           "linear-gradient(0turn,rgba(234,234,234,1) 0%,rgba(234,234,234,0) 100%)",
         "fade-in-white":
           "linear-gradient(to bottom,rgba(234,234,234,1) 0%,rgba(234,234,234,0) 100%)",
+      },
+      screens: {
+        "2xl": { min: "1400px" },
       },
     },
   },

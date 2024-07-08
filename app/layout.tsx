@@ -44,7 +44,7 @@ const generalSansSemiBold = localFont({
   variable: "--generalsans-semibold",
 });
 const generalSansMedium = localFont({
-  src: "../public/fonts/general_sans/GeneralSans-Semibold.otf",
+  src: "../public/fonts/general_sans/GeneralSans-Medium.otf",
   variable: "--generalsans-medium",
 });
 const generalSansLight = localFont({

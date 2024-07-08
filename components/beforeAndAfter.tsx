@@ -74,7 +74,7 @@ export default function BeforeAndAfter() {
             CLICK ON PHOTOS TO SEE THE BEFORE
           </p>
           <p className="flex flex-col text-6xl md:text-7xl lg:text-8xl w-full font-general-sans max-w-96">
-            <span>Simply</span>
+            <span className="-my-4">Simply</span>
             <span className="font-bold-italic text-right">Sculpted</span>
           </p>
         </div>

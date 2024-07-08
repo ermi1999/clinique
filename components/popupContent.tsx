@@ -3,12 +3,12 @@ import { Input } from "./ui/input";
 
 export default function PopupContent() {
   return (
-    <div className="w-full flex flex-col lg:flex-row lg:space-x-10 space-y-10 lg:space-y-0 justify-center items-center lg:items-start">
+    <div className="w-full flex flex-col lg:flex-row lg:space-x-10 space-y-5 lg:space-y-0 justify-center items-center lg:items-start">
       <p className="font-semibold w-80 lg:w-48 text-base md:text-lg leading-none text-center lg:text-start">
         Send us a message through the portal and we will get back to you within
         1 business day
       </p>
-      <div className="flex flex-col space-y-5 justify-center items-center w-80">
+      <div className="flex flex-col space-y-3 lg:space-y-5 justify-center items-center w-80">
         <Input type="text" placeholder="Full Name" className="h-14" />
         <Input placeholder="Phone Number" className="h-14" />
         <Input type="email" placeholder="Email" className="h-14" />

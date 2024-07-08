@@ -33,14 +33,14 @@ export default function WhatWeDo() {
     { scope: container }
   );
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center lg:mt-40 xl:mt-20">
       <div className="bg-white flex flex-col items-center space-y-5 z-40 w-[100vw] md:w-[95vw] what-we-do-section pb-40 md:pb-52">
         <h1 className="text-2xl xs:text-3xl mt-6 font-medium">What we do?</h1>
         <p className="hidden md:flex sm:text-4xl md:text-7xl font-medium">
           Rhinoplasty as a{" "}
           <span className="font-bold-italic ml-4">Specialty</span>
         </p>
-        <p className="flex flex-col text-5xl xs:text-5xl md:hidden w-full px-5 font-medium">
+        <p className="flex flex-col text-5xl xs:text-5xl md:hidden w-full px-5 font-medium max-w-[400px]">
           <span className="text-left">Rhinoplasty</span>
           <span className="text-right">
             as a <span className="font-bold-italic">Speciality</span>
@@ -73,7 +73,7 @@ export default function WhatWeDo() {
             <p className="flex flex-col max-w-[900px] self-center w-full">
               <span className="text-start">Choose a rhinoplasty surgeon</span>
 
-              <span className="text-end font-bold-italic">
+              <span className="text-end font-bold-italic -my-3">
                 with the highest level
               </span>
               <span className="text-center">
