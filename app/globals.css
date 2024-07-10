@@ -45,10 +45,6 @@
   }
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
 .what-we-do-section {
   border-top-right-radius: 3rem;
   border-top-left-radius: 3rem;
