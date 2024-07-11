@@ -1,20 +1,31 @@
+import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 interface ContactUsInterface {
   imageUrl: string;
   message: string;
+  className?: string;
 }
 
-export default function ContactUs({ imageUrl, message }: ContactUsInterface) {
+export default function ContactUs({
+  imageUrl,
+  message,
+  className,
+}: ContactUsInterface) {
   return (
-    <section className="flex flex-col lg:flex-row h-full w-full md:w-[85%] lg:w-full px-2 md:px-7 my-14 md:my-20">
+    <section
+      className={cn(
+        "flex flex-col lg:flex-row h-full w-full md:w-[85%] lg:w-full px-1 md:px-7 my-14 md:my-20",
+        className
+      )}
+    >
       <img
         alt="beautiful women"
-        className="rounded-4xl md:rounded-5xl w-full lg:w-[800px] h-[600px] md:h-[800px] lg:h-auto object-cover object-center"
+        className="rounded-2xl sm:rounded-3xl md:rounded-5xl w-full lg:w-[800px] h-[600px] md:h-[800px] lg:h-auto object-cover object-center"
         src={imageUrl}
       />
-      <div className="items-center justify-center bg-white rounded-4xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
+      <div className="items-center justify-center bg-white rounded-2xl sm:rounded-3xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
         <h1 className="text-5xl md:text-7xl xl:text-[5.5rem] font-general-sans flex flex-col w-full max-w-[300px] md:max-w-[450px] md:w-[60%] leading-none py-10 xl:py-10">
           <span className="w-full text-left -mb-5 md:-mb-8">We love</span>
           <span className="font-semibold-italic text-6xl md:text-8xl xl:text-8xl w-full text-end leading-none">

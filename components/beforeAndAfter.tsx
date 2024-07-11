@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function BeforeAndAfter() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   const top = [2, 6, 12];
   const bottom = [4, 10];

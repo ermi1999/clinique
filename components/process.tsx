@@ -27,7 +27,7 @@ export default function WorkProcess() {
   return (
     <section className="w-full">
       <div className="absolute z-30 w-full px-2">
-        <div className="w-full bg-white rounded-3xl flex flex-col xl:flex-row xl:justify-between font-general-sans-medium items-center justify-center space-y-10 p-10">
+        <div className="w-full bg-white rounded-3xl lg:rounded-4xl flex flex-col xl:flex-row xl:justify-between font-general-sans-medium items-center justify-center space-y-10 p-10">
           <p className="hidden xl:flex flex-col w-full text-5xl xl:max-w-[800px] leading-none">
             <span className="self-center">As great work is often</span>
             <span className="self-end">
@@ -68,16 +68,16 @@ export default function WorkProcess() {
         <div
           ref={container}
           className={cn(
-            "flex flex-col pt-60 lg:pt-60 space-y-10 pb-20 items-center justify-center max-w-[1200px]",
+            "flex flex-col pt-72 lg:pt-60 space-y-10 pb-40 items-center justify-center max-w-[1200px]",
             isDesktop ? "card_container" : "some"
           )}
         >
           <SmallHeadingContainer>TAILORED RESULTS</SmallHeadingContainer>
-          <h1 className="flex flex-col w-full max-w-[320px] sm:max-w-[600px] md:w-[450px] lg:w-[600px] text-[2.50rem] sm:text-[4.7rem] md:text-7xl lg:text-8xl text-nowrap lg:self-end leading-none font-general-sans-medium -space-y-2 sm:-space-y-4">
+          <h1 className="flex flex-col w-full pb-14 max-w-[320px] sm:max-w-[600px] md:w-[450px] lg:w-[600px] text-[2.50rem] sm:text-[4.7rem] md:text-7xl lg:text-8xl text-nowrap lg:self-end leading-none font-general-sans-medium -space-y-2 sm:-space-y-4">
             <span>Rhinoplasty</span>{" "}
             <span className="self-end">
               at-a-
-              <span className="font-bold-italic text-[2.80rem] sm:text-[5.2rem] md:text-[5rem] lg:text-[6.5rem]">
+              <span className="font-bold-italic text-[3rem] sm:text-[5.2rem] md:text-[5rem] lg:text-[6.5rem]">
                 glance
               </span>
             </span>

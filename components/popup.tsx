@@ -16,14 +16,18 @@ import {
 } from "./ui/drawer";
 import PopupContent from "./popupContent";
 
-export default function Popup() {
+interface PopupInterface {
+  className?: string;
+}
+
+export default function Popup({ className }: PopupInterface) {
   const [open, setOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger asChild>
+        <DialogTrigger asChild className={className}>
           <Button className="text-xs md:text-base shadow-sm">
             Book a consultation
           </Button>
@@ -41,7 +45,7 @@ export default function Popup() {
 
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>
+      <DrawerTrigger asChild className={className}>
         <Button className="text-xs md:text-base shadow-sm">
           Book a consultation
         </Button>

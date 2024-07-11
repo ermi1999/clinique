@@ -1,3 +1,5 @@
+import Popup from "./popup";
+
 export default function HeroText() {
   return (
     <div className="absolute w-full mt-32 lg:mt-56 px-3 md:px-7 overflow-hidden">
@@ -21,6 +23,7 @@ export default function HeroText() {
           <p className="self-end lg:self-start w-36 md:w-56 xl:py-5 xl:w-[330px] text-off-dark font-semibold text-sm md:text-xl lg:text-lg 2xl:text-xl lg:-mt-14 xl:-mt-16">
             Entrust your face to a rhinoplasty specialist in Montrea
           </p>
+          <Popup className="md:hidden self-end mt-20" />
         </div>
       </div>
     </div>

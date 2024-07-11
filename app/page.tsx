@@ -3,6 +3,7 @@ import ContactUs from "@/components/contactUs";
 import HeroText from "@/components/hero-text";
 import OurApproach from "@/components/ourApproach";
 import OurPhilosophy from "@/components/ourPhilosophy";
+import OutOfTownSection from "@/components/outOfTown";
 import WorkProcess from "@/components/process";
 import Services from "@/components/services";
 import WhatWeDo from "@/components/whatWeDoSection";
@@ -31,6 +32,7 @@ export default function Home() {
       <Services />
       <OurApproach />
       <WorkProcess />
+      <OutOfTownSection />
     </main>
   );
 }
