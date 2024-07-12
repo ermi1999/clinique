@@ -16,7 +16,6 @@ export default function Services() {
           trigger: ".head-to-fade-out",
           scrub: 1,
           start: "top 220px",
-          markers: true,
         },
         y: -40,
         opacity: 0.3,
