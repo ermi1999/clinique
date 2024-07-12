@@ -10,7 +10,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        "group relative inline-block h-[45px] w-[145px] md:h-[50px] md:w-[200px] overflow-hidden rounded-full text-primary-foreground",
+        "group relative inline-block h-[45px] w-[145px] md:h-[50px] md:w-[200px] overflow-hidden rounded-full text-primary-foreground text-nowrap",
         className
       )}
       {...props}

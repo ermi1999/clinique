@@ -107,11 +107,19 @@ const config = {
             transform: "rotate(360deg)",
           },
         },
+        fadeinup: {
+          from: {
+            opacity: "0",
+            transform: "translate3d(0, 100%, 0)",
+          },
+          to: { opacity: "1", transform: "none" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spin: "spin 3s linear 1",
+        fadeinup: "fadeinup 1s",
       },
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(.47,1.64,.38,.87)",

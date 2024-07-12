@@ -39,8 +39,8 @@ export default function Navbar() {
           <Link href="/drchacra" className="">
             Dr. Chacra
           </Link>
-          <Link href="/">Rhinoplasty solutions</Link>
-          <Link href="/">Learning center</Link>
+          <Link href="/services">Rhinoplasty solutions</Link>
+          <Link href="/out-of-town">Out Of Town</Link>
           <Link href="/">Contact us</Link>
         </div>
         <div className="flex flex-row space-x-10">
@@ -59,8 +59,8 @@ export default function Navbar() {
                 <Link href="/drchacra" className="">
                   Dr. Chacra
                 </Link>
-                <Link href="/">Rhinoplasty solutions</Link>
-                <Link href="/">Learning center</Link>
+                <Link href="/services">Rhinoplasty solutions</Link>
+                <Link href="/out-of-town">Out Of Town</Link>
                 <Link href="/">Contact us</Link>
               </div>
               <Popup className="self-center" />

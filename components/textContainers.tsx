@@ -27,7 +27,7 @@ export function SmallHeadingContainer({
   return (
     <h1
       className={cn(
-        "text-sm sm:text-base mt-6 font-medium self-center py-5 md:py-10",
+        "text-sm sm:text-base mt-6 font-medium self-center py-5 md:py-10 uppercase",
         className
       )}
     >

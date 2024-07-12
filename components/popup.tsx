@@ -15,6 +15,7 @@ import {
   DrawerTrigger,
 } from "./ui/drawer";
 import PopupContent from "./popupContent";
+import { cn } from "@/lib/utils";
 
 interface PopupInterface {
   className?: string;
@@ -27,8 +28,8 @@ export default function Popup({ className }: PopupInterface) {
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger asChild className={className}>
-          <Button className="text-xs md:text-base shadow-sm">
+        <DialogTrigger asChild>
+          <Button className={cn("text-xs md:text-base shadow-sm", className)}>
             Book a consultation
           </Button>
         </DialogTrigger>
@@ -45,8 +46,8 @@ export default function Popup({ className }: PopupInterface) {
 
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild className={className}>
-        <Button className="text-xs md:text-base shadow-sm">
+      <DrawerTrigger asChild>
+        <Button className={cn("text-xs md:text-base shadow-sm", className)}>
           Book a consultation
         </Button>
       </DrawerTrigger>

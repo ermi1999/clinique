@@ -10,7 +10,7 @@ export default function DrChacra() {
     images.push(`/resources/${i}.webp`);
   }
   return (
-    <main className="w-full h-full pt-32 flex flex-col items-center space-y-32">
+    <main className="w-full h-full py-32 flex flex-col items-center space-y-32">
       <section className="flex flex-col-reverse sm:flex-col lg:flex-row px-5 items-center lg:items-start justify-center lg:justify-start w-full space-y-10 max-w-[1100px]">
         <div className="flex flex-col space-y-10 items-center justify-center w-full lg:self-center lg:items-start">
           <h1
