@@ -41,7 +41,7 @@ export default function Navbar() {
           </Link>
           <Link href="/services">Rhinoplasty solutions</Link>
           <Link href="/out-of-town">Out Of Town</Link>
-          <Link href="/">Contact us</Link>
+          <Link href="/contactus">Contact us</Link>
         </div>
         <div className="flex flex-row space-x-10">
           <Popup className="hidden md:flex" />
@@ -61,7 +61,7 @@ export default function Navbar() {
                 </Link>
                 <Link href="/services">Rhinoplasty solutions</Link>
                 <Link href="/out-of-town">Out Of Town</Link>
-                <Link href="/">Contact us</Link>
+                <Link href="/contactus">Contact us</Link>
               </div>
               <Popup className="self-center" />
             </SheetContent>

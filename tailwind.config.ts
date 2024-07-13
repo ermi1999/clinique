@@ -127,7 +127,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         spin: "spin 3s linear 1",
         fadeinup: "fadeinup 1s",
-        fadeindown: "fadeindown 1s",
+        fadeindown: "fadeindown 1.5s",
       },
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(.47,1.64,.38,.87)",

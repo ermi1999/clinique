@@ -24,7 +24,7 @@ export default function ContactUs({
     >
       <img
         alt="beautiful women"
-        className="rounded-3xl sm:rounded-4xl md:rounded-5xl w-full lg:w-[450px] xl:w-[600px] h-[600px] md:h-[800px] object-cover object-top"
+        className="rounded-3xl sm:rounded-4xl md:rounded-5xl w-full lg:w-[450px] xl:w-[600px] h-[600px] md:h-[800px] lg:h-[900px] object-cover object-top"
         src={imageUrl}
       />
       <div className="items-center justify-center bg-white rounded-3xl sm:rounded-4xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
