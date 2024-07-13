@@ -19,7 +19,7 @@ export default function Navbar() {
           />
         </Link>
         <div
-          className="space-x-10 xl:space-x-20 *:py-1
+          className="animate-fadeindown space-x-10 xl:space-x-20 *:py-1
                 *:relative
                 *:isolate 
                 *:cursor-pointer

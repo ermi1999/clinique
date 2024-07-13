@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import Button from "./button";
+import { SmallHeadingContainer } from "./textContainers";
 
 export default function WhatWeDo() {
   gsap.registerPlugin(ScrollTrigger);
@@ -35,15 +36,14 @@ export default function WhatWeDo() {
   return (
     <section className="flex flex-col items-center lg:mt-40 xl:mt-20">
       <div className="bg-white flex flex-col items-center space-y-5 z-40 w-[100vw] md:w-[95vw] what-we-do-section pb-40 md:pb-52">
-        <h1 className="text-2xl xs:text-3xl mt-6 font-medium">What we do?</h1>
-        <p className="hidden md:flex sm:text-4xl md:text-7xl font-medium">
-          Rhinoplasty as a{" "}
-          <span className="font-bold-italic ml-4">Specialty</span>
-        </p>
-        <p className="flex flex-col text-5xl xs:text-5xl md:hidden w-full px-5 font-medium max-w-[400px]">
+        <SmallHeadingContainer>What we do?</SmallHeadingContainer>
+        <p className="flex flex-col font-general-sans-medium text-nowrap leading-none -space-y-3 sm:-space-y-5 text-5xl sm:text-7xl lg:text-8xl w-full px-5 max-w-[450px] sm:max-w-[600px] lg:max-w-[900px]">
           <span className="text-left">Rhinoplasty</span>
           <span className="text-right">
-            as a <span className="font-bold-italic">Speciality</span>
+            as a{" "}
+            <span className="font-bold-italic text-6xl sm:text-8xl lg:text-9xl">
+              Speciality
+            </span>
           </span>
         </p>
         <div
@@ -63,20 +63,23 @@ export default function WhatWeDo() {
         </div>
       </div>
       <div className="w-[100vw] bg-fade-in flex justify-center">
-        <div className="bg-white w-[100vw] md:w-[95vw] pb-20 rounded-b-4xl text-4xl md:text-5xl flex flex-col md:flex-row px-5 md:px-10">
-          <img
-            src="/resources/8d29c8ba-1eee-4b9f-8.png"
-            alt="a doctor doing surgery"
-            className="object-contain self-end w-24 h-24 md:h-32 md:w-32"
-          />
-          <div className="flex flex-col font-medium w-full space-y-5">
-            <p className="flex flex-col max-w-[900px] self-center w-full">
-              <span className="text-start">Choose a rhinoplasty surgeon</span>
+        <div className="bg-white w-[100vw] md:w-[95vw] pb-20 rounded-b-4xl text-2xl sm:text-4xl lg:text-6xl xl:text-[3.5rem] flex flex-col px-5 md:px-10 md:-space-y-5">
+          <div className="relative self-end w-24 h-24 md:h-32 md:w-32">
+            <Image
+              src="/resources/8d29c8ba-1eee-4b9f-8.png"
+              alt="a doctor doing surgery"
+              className="object-cover rounded-2xl"
+              fill
+            />
+          </div>
+          <div className="flex flex-col font-general-sans-medium w-full space-y-5">
+            <p className="flex flex-col max-w-[500px] sm:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] text-nowrap self-center w-full">
+              <span className="self-start">Choose a rhinoplasty surgeon</span>
 
-              <span className="text-end font-bold-italic -my-3">
+              <span className="self-end font-bold-italic -my-3 text-3xl sm:text-5xl lg:text-7xl xl:text-[4rem]">
                 with the highest level
               </span>
-              <span className="text-center">
+              <span className="self-center">
                 of training, experience and skill.
               </span>
             </p>
@@ -86,11 +89,14 @@ export default function WhatWeDo() {
               </Button>
             </div>
           </div>
-          <img
-            src="/resources/IMG_8523.jpg"
-            alt="a doctor doing surgery"
-            className="object-contain self-start pl-5 h-40 w-40 md:h-52 md:w-52"
-          />
+          <div className="relative self-start pl-5 h-40 w-40 md:h-52 md:w-52">
+            <Image
+              src="/resources/IMG_8523.jpg"
+              alt="a doctor doing surgery"
+              className="object-cover rounded-2xl"
+              fill
+            />
+          </div>
         </div>
       </div>
     </section>

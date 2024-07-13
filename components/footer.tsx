@@ -130,7 +130,7 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className="flex flex-col sm:space-y-0 sm:flex-row sm:w-full sm:justify-between sm:border-t sm:border-b items-center justify-center border-muted sm:h-16 md:h-20">
+        <div className="flex flex-col sm:space-y-0 sm:flex-row sm:w-full sm:justify-between sm:border-t items-center justify-center border-[#c7c7c7] sm:h-16 md:h-20">
           <span>All rights reserved</span>
           <span className="mb-5 sm:mb-0">Privacy Policy</span>
           <p>Created by Ermiyas</p>

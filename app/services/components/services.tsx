@@ -44,7 +44,7 @@ export default function Service({
     };
   }, []);
   return (
-    <div className="flex flex-col sm:flex-row space-y-5 sm:space-x-10 sm:border-t sm:border-muted sm:py-10 lg:w-full lg:max-w-[1200px] fade-in-up opacity-0">
+    <div className="flex flex-col sm:flex-row space-y-5 sm:space-x-10 sm:border-t sm:border-[#c7c7c7] sm:py-10 lg:w-full lg:max-w-[1200px] fade-in-up opacity-0">
       <Link href={url}>
         <div className="w-full h-[445px] sm:w-[200px] sm:h-[280px] md:w-[150px] md:h-[230px] lg:w-[200px] lg:h-[280px] relative">
           <Image

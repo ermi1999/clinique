@@ -1,9 +1,33 @@
+"use client";
 import Popup from "./popup";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function HeroText() {
+  const container = useRef<HTMLDivElement | null>(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(
+    () => {
+      gsap.to(".homepage-header", {
+        scrollTrigger: {
+          trigger: ".homepage-header",
+          scrub: 1,
+          start: "top 120px",
+        },
+        y: -100,
+        opacity: 0.5,
+      });
+    },
+    { scope: container }
+  );
   return (
-    <div className="absolute w-full mt-32 lg:mt-56 px-3 md:px-7 overflow-hidden">
-      <div className="flex flex-col w-full h-full px-5 items-center justify-center">
+    <div
+      className="absolute w-full mt-32 lg:mt-56 px-3 md:px-7 overflow-hidden"
+      ref={container}
+    >
+      <div className="flex flex-col w-full h-full px-5 items-center justify-center homepage-header">
         <div className="w-full max-w-80 md:max-w-[700px] flex flex-col items-center justify-center lg:items-start lg:max-w-[1100px] 2xl:max-w-[1300px]">
           <p className="font-semibold text-off-dark w-64 text-center lg:text-start text-sm md:text-xl lg:text-lg 2xl:text-xl text-balance">
             Premiere Destination for Designer Rhinoplasty

@@ -11,9 +11,9 @@ export default function Services() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(
     () => {
-      gsap.to(".head-to-fade-out", {
+      gsap.to(".services-header", {
         scrollTrigger: {
-          trigger: ".head-to-fade-out",
+          trigger: ".services-header",
           scrub: 1,
           start: "top 220px",
         },
@@ -30,13 +30,13 @@ export default function Services() {
         ref={container}
       >
         <SmallHeadingContainer>Our services</SmallHeadingContainer>
-        <h1 className="flex flex-col font-general-sans-medium text-2xl sm:text-4xl md:text-5xl w-full head-to-fade-out">
+        <h1 className="flex flex-col font-general-sans-medium text-2xl sm:text-4xl md:text-5xl w-full services-header">
           <span className="font-bold-italic text-6xl sm:text-8xl lg:text-9xl">
             Rhinoplasty{" "}
           </span>
           <span className="self-end">by Dr. Zahi Abou Chacra</span>
         </h1>
-        <p className="w-[200px] font-medium self-start">
+        <p className="w-[200px] font-medium self-start services-header">
           Boutique experience. Breathtaking results.
         </p>
       </div>

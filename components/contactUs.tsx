@@ -6,12 +6,14 @@ interface ContactUsInterface {
   imageUrl: string;
   message: string;
   className?: string;
+  less?: boolean;
 }
 
 export default function ContactUs({
   imageUrl,
   message,
   className,
+  less,
 }: ContactUsInterface) {
   return (
     <section
@@ -22,11 +24,11 @@ export default function ContactUs({
     >
       <img
         alt="beautiful women"
-        className="rounded-2xl sm:rounded-3xl md:rounded-5xl w-full lg:w-[800px] h-[600px] md:h-[800px] lg:h-auto object-cover object-center"
+        className="rounded-3xl sm:rounded-4xl md:rounded-5xl w-full lg:w-[450px] xl:w-[600px] h-[600px] md:h-[800px] object-cover object-top"
         src={imageUrl}
       />
-      <div className="items-center justify-center bg-white rounded-2xl sm:rounded-3xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
-        <h1 className="text-5xl md:text-7xl xl:text-[5.5rem] font-general-sans flex flex-col w-full max-w-[300px] md:max-w-[450px] md:w-[60%] leading-none py-10 xl:py-10">
+      <div className="items-center justify-center bg-white rounded-3xl sm:rounded-4xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
+        <h1 className="text-5xl md:text-7xl xl:text-[5.5rem] font-general-sans flex flex-col w-full max-w-[300px] md:max-w-[450px] md:w-[60%] leading-none py-10 xl:py-10 text-nowrap">
           <span className="w-full text-left -mb-5 md:-mb-8">We love</span>
           <span className="font-semibold-italic text-6xl md:text-8xl xl:text-8xl w-full text-end leading-none">
             your face
@@ -40,11 +42,21 @@ export default function ContactUs({
             <Input type="text" placeholder="Full Name" className="h-14" />
             <Input placeholder="Phone Number" className="h-14" />
             <Input type="email" placeholder="Email" className="h-14" />
-            <p className="font-semibold leading-5">
+            <p
+              className={cn(
+                "font-semibold leading-5",
+                less ? "hidden" : "flex"
+              )}
+            >
               How long have you been thinking about making changes to the
               appearance of your nose?
             </p>
-            <div className="flex flex-col justify-center items-center w-full">
+            <div
+              className={cn(
+                "flex flex-col justify-center items-center w-full",
+                less ? "hidden" : "flex"
+              )}
+            >
               <div className="flex flex-row w-full space-x-5 items-center">
                 <Input
                   type="radio"
