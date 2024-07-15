@@ -109,8 +109,8 @@ export default function Services() {
         <div className="w-full flex justify-center">
           <Service
             ImageUrl="/resources/service5-image.png"
-            service="Function Rhinoplasty"
-            url="/function-rhinoplasty"
+            service="Functional Rhinoplasty"
+            url="/functional-rhinoplasty"
           >
             <p>
               The goal of this surgery is to alleviate nasal obstruction. While
@@ -124,7 +124,7 @@ export default function Services() {
           <Service
             ImageUrl="/resources/service6-image.png"
             service="Adjunct Rhinoplasty"
-            url="/adjunct-rhinoplasty"
+            url="/adjunct-procedures"
           >
             <p>
               These procedures are performed in conjunction with Cosmetic

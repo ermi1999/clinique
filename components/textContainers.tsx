@@ -36,6 +36,16 @@ export function SmallHeadingContainer({
   );
 }
 
+export function Heading({ className, children }: TextContainerInterface) {
+  return (
+    <h2
+      className={cn("font-general-sans-medium text-xl md:text-2xl", className)}
+    >
+      {children}
+    </h2>
+  );
+}
+
 export function LargeItalicText({
   className,
   children,
@@ -49,5 +59,21 @@ export function LargeItalicText({
     >
       {children}
     </span>
+  );
+}
+
+export function ParagraphWrapper({
+  className,
+  children,
+}: TextContainerInterface) {
+  return (
+    <div
+      className={cn(
+        "max-w-[760px] text-lg md:text-[1.3rem] text-pretty",
+        className
+      )}
+    >
+      {children}
+    </div>
   );
 }

@@ -76,3 +76,12 @@
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
 }
+
+.radial-border {
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=9f9f9f&c2=fbfdfc&gt=r&gd=dcc
+*/
+  background: #9f9f9f;
+  background: radial-gradient(at center, #9f9f9f, #fbfdfc);
+}

@@ -68,9 +68,11 @@ export default function Service({
         </div>
         <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
           <Popup className="w-full text-base h-[50px] sm:w-[165px]" />
-          <Button className="rounded-3xl w-full uppercase bg-background border border-primary hover:bg-off-dark hover:text-white text-primary h-[50px] sm:w-[165px]">
-            Discover
-          </Button>
+          <Link href={url}>
+            <Button className="rounded-3xl w-full uppercase bg-background border border-primary hover:bg-off-dark hover:text-white text-primary h-[50px] sm:w-[165px]">
+              Discover
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

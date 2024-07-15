@@ -38,7 +38,7 @@ export default function Services() {
             paragraph1="Changes the shape of the nose to achieve more balance"
             paragraph2="and symmetry of the facial features"
             align="start"
-            href="/"
+            href="/primary-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/desktop_pieces/piece2.jpg"
@@ -47,7 +47,7 @@ export default function Services() {
             paragraph1="Requires operating on a nose that"
             paragraph2="has previously been altered surgically"
             align="start"
-            href="/"
+            href="/revision-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/desktop_pieces/piece3.jpg"
@@ -56,7 +56,7 @@ export default function Services() {
             paragraph1="Catering to a wide range of ethnicities from Asian"
             paragraph2="to middle Eastern, to African and Afro-American and Hispanic"
             align="end"
-            href="/"
+            href="/ethnic-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/desktop_pieces/piece4.jpg"
@@ -65,7 +65,7 @@ export default function Services() {
             paragraph1="Non-surgical. Designed to scuipt a more"
             paragraph2="aesthetic nose that perfectly suits the face"
             align="end"
-            href="/"
+            href="/liquid-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/desktop_pieces/piece5.jpg"
@@ -74,7 +74,7 @@ export default function Services() {
             paragraph1="Offered in conjunction with"
             paragraph2="Rhinoplasty to further define the face"
             align="start"
-            href="/"
+            href="/adjunct-procedures"
           />
         </div>
       ) : (
@@ -85,7 +85,7 @@ export default function Services() {
             heading="Primary Rhinoplasty"
             paragraph1="Changes the shape of the nose to achieve more balance and symmetry of the facial features"
             align="start"
-            href="/"
+            href="/primary-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/mobile_pieces/mobile_piece2.webp"
@@ -93,7 +93,7 @@ export default function Services() {
             heading="Revision Rhinoplasty"
             paragraph1="Requires operating on a nose that has previously been altered surgically"
             align="start"
-            href="/"
+            href="/revision-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/mobile_pieces/mobile_piece3.webp"
@@ -101,7 +101,7 @@ export default function Services() {
             heading="Ethnic Rhinoplasty"
             paragraph1="Catering to a wide range of ethnicities from Asian to middle Eastern, to African and Afro-American and Hispanic"
             align="end"
-            href="/"
+            href="/ethnic-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/mobile_pieces/mobile_piece4.webp"
@@ -109,7 +109,7 @@ export default function Services() {
             heading="Liquid Rhinoplasty"
             paragraph1="Non-surgical. Designed to scuipt a more aesthetic nose that perfectly suits the face"
             align="end"
-            href="/"
+            href="/liquid-rhinoplasty"
           />
           <Piece
             imageUrl="/resources/mobile_pieces/mobile_piece5.webp"
@@ -117,7 +117,7 @@ export default function Services() {
             heading="Adjunct Procedures"
             paragraph1="Offered in conjunction with Rhinoplasty to further define the face"
             align="start"
-            href="/"
+            href="/adjunct-procedures"
           />
         </div>
       )}

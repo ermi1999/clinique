@@ -61,6 +61,11 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundColor: {
+        "radial-gradient": {
+          background: "radial-gradient(at center, #000000, #848484)",
+        },
+      },
       fontFamily: {
         regular: ["var(--cabinet-regular)"],
         bold: ["var(--cabinet-bold)"],
