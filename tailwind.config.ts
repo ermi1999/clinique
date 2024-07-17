@@ -159,7 +159,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spin: "spin 3s linear 1",
-        fadeinup: "fadeinup 1.5s",
+        fadeinup: "fadeinup 1s",
         fadeindown: "fadeindown 1s",
         fadeinleft: "fadeinleft 1s",
         "fadeinleft-fast": "fadeinleft-fast 1s",
