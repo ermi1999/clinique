@@ -115,14 +115,42 @@ const config = {
         fadeinup: {
           from: {
             opacity: "0",
-            transform: "translate3d(0, 100%, 0)",
+            transform: "translate3d(0, 40%, 0)",
           },
           to: { opacity: "1", transform: "none" },
         },
         fadeindown: {
           from: {
             opacity: "0",
-            transform: "translate3d(0%, -100%, 0)",
+            transform: "translate3d(0%, -40%, 0)",
+          },
+          to: { opacity: "1", transform: "none" },
+        },
+        fadeinleft: {
+          from: {
+            opacity: "0",
+            transform: "translate3d(-10%, 0%, 0)",
+          },
+          to: { opacity: "1", transform: "none" },
+        },
+        "fadeinleft-fast": {
+          from: {
+            opacity: "0",
+            transform: "translate3d(-5%, 0%, 0)",
+          },
+          to: { opacity: "1", transform: "none" },
+        },
+        fadeinright: {
+          from: {
+            opacity: "0",
+            transform: "translate3d(10%, 0%, 0)",
+          },
+          to: { opacity: "1", transform: "none" },
+        },
+        "fadeinright-fast": {
+          from: {
+            opacity: "0",
+            transform: "translate3d(5%, 0%, 0)",
           },
           to: { opacity: "1", transform: "none" },
         },
@@ -131,8 +159,12 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spin: "spin 3s linear 1",
-        fadeinup: "fadeinup 1s",
-        fadeindown: "fadeindown 1.5s",
+        fadeinup: "fadeinup 1.5s",
+        fadeindown: "fadeindown 1s",
+        fadeinleft: "fadeinleft 1s",
+        "fadeinleft-fast": "fadeinleft-fast 1s",
+        fadeinright: "fadeinright 1s",
+        "fadeinright-fast": "fadeinright-fast 1s",
       },
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(.47,1.64,.38,.87)",

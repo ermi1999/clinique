@@ -25,13 +25,13 @@ export default function ContactUs({
       )}
     >
       <div className="flex flex-col w-full max-w-[600px]">
-        <h1 className="self-center text-3xl sm:text-5xl md:text-7xl lg:text-5xl xl:text-6xl font-general-sans-medium flex flex-col w-[250px] sm:w-[500px] md:w-[650px] lg:w-[500px] xl:w-[550px] leading-none -space-y-1">
+        <h1 className="self-center text-3xl sm:text-5xl md:text-7xl lg:text-5xl xl:text-6xl font-general-sans-medium flex flex-col w-[250px] sm:w-[500px] md:w-[650px] lg:w-[500px] xl:w-[550px] leading-none -space-y-1 fade-in-left opacity-0">
           <span>{header}</span>
           <span className="text-4xl sm:text-6xl md:text-8xl lg:text-6xl xl:text-7xl font-bold-italic self-end">
             {italicHeader}
           </span>
         </h1>
-        <div className="self-center flex flex-row space-x-4 ml-20 w-[90%]">
+        <div className="self-center flex flex-row space-x-4 ml-20 w-[90%] fade-in-up opacity-0">
           <div className="relative w-[86px] sm:w-[130px] h-[113px] sm:h-[173px]">
             <Image
               src="/resources/IMG_5352.webp"
@@ -49,13 +49,13 @@ export default function ContactUs({
             />
           </div>
         </div>
-        <Link
+        <a
           href="/drchacra"
           className="self-center font-italic text-xs text-center max-w-[250px] mt-4"
         >
           Meet Dr. Zahi Abou Chacra; Double board certified Facial Plastic and
           Reconstructive surgeon.
-        </Link>
+        </a>
       </div>
       <div className="flex flex-col w-full space-y-5 max-w-[600px] items-center">
         <div

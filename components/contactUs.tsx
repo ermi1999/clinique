@@ -29,8 +29,10 @@ export default function ContactUs({
       />
       <div className="items-center justify-center bg-white rounded-3xl sm:rounded-4xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
         <h1 className="text-5xl md:text-7xl xl:text-[5.5rem] font-general-sans flex flex-col w-full max-w-[300px] md:max-w-[450px] md:w-[60%] leading-none py-10 xl:py-10 text-nowrap">
-          <span className="w-full text-left -mb-5 md:-mb-8">We love</span>
-          <span className="font-semibold-italic text-6xl md:text-8xl xl:text-8xl w-full text-end leading-none">
+          <span className="w-full text-left -mb-5 md:-mb-8 fade-in-left opacity-0">
+            We love
+          </span>
+          <span className="font-semibold-italic text-6xl md:text-8xl xl:text-8xl w-full text-end leading-none fade-in-right opacity-0">
             your face
           </span>
         </h1>

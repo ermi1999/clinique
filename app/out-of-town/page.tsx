@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -42,6 +42,32 @@ export default function OutOfTown() {
     },
     { scope: container }
   );
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const target = entry.target as HTMLElement;
+          if (entry.isIntersecting) {
+            target.classList.add("animate-fadeinup");
+            target.classList.add("opacity-100"); // Add class when intersecting
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const elements = document.getElementsByClassName("fade-in-up");
+    for (let i = 0; i < elements.length; i++) {
+      observer.observe(elements[i] as Element);
+    }
+
+    // Cleanup observer on component unmount
+    return () => {
+      for (let i = 0; i < elements.length; i++) {
+        observer.unobserve(elements[i] as Element);
+      }
+    };
+  }, []);
   return (
     <main
       className="flex flex-col py-32 overflow-hidden items-center space-y-32"
@@ -52,13 +78,15 @@ export default function OutOfTown() {
           className="flex flex-col text-[2.7rem] sm:text-7xl lg:text-8xl xl:text-9xl font-general-sans-medium
           -space-y-3 sm:-space-y-5 leading-none w-full text-nowrap out-of-town-header"
         >
-          <span className="self-start">Not in montreal?</span>
-          <span className="self-end font-bold-italic text-6xl sm:text-8xl lg:text-9xl">
+          <span className="self-start animate-fadeinleft">
+            Not in montreal?
+          </span>
+          <span className="self-end font-bold-italic text-6xl sm:text-8xl lg:text-9xl animate-fadeinright">
             We&apos;ve got you
           </span>
         </h1>
         <p className="text-pretty text-start text-off-dark font-medium leading-none flex flex-col space-y-3 w-[300px] sm:w-[400px] lg:w-[300px] out-of-town-header">
-          <span>
+          <span className="animate-fadeinleft">
             We are pleased to offer virtual consultations for patients located
             outside of The Greater Montreal Area, including our specialized
             online rhinoplasty consultation with Dr. Chacra. Whether you&apos;re
@@ -76,10 +104,14 @@ export default function OutOfTown() {
         />
         <div className="items-center justify-center bg-white rounded-3xl sm:rounded-4xl md:rounded-5xl flex flex-col w-full pt-4 pb-20 xl:pb-0">
           <h1 className="flex flex-col font-general-sans-medium leading-none text-5xl sm:text-7xl w-full max-w-[320px] sm:max-w-[500px] xl:max-w-full -space-y-3 my-10">
-            <span className="self-center">Meet your</span>
+            <span className="self-center fade-in-left opacity-0">
+              Meet your
+            </span>
             <span className="flex flex-col xl:flex-row xl:self-center xl:space-x-3 -space-y-3">
-              <span className="self-start">Surgeon,</span>
-              <span className="text-7xl sm:text-8xl font-bold-italic self-end">
+              <span className="self-start fade-in-left opacity-0">
+                Surgeon,
+              </span>
+              <span className="text-7xl sm:text-8xl font-bold-italic self-end fade-in-right opacity-0">
                 virtually
               </span>
             </span>
@@ -116,12 +148,14 @@ export default function OutOfTown() {
         <div className="flex flex-col w-full space-y-5">
           <h1 className="self-center flex flex-col text-[2.7rem] sm:text-6xl lg:text-8xl font-general-sans-medium w-full max-w-[340px] sm:max-w-[550px] lg:max-w-[800px] text-nowrap leading-none -space-y-3 sm:-space-y-5">
             <span className="self-center flex flex-row space-x-3">
-              <span className="text-6xl sm:text-8xl lg:text-9xl font-bold-italic">
+              <span className="text-6xl sm:text-8xl lg:text-9xl font-bold-italic fade-in-left opacity-0">
                 Discover
               </span>{" "}
-              <span className="hidden sm:flex self-center">The City</span>
+              <span className="hidden sm:flex self-center fade-in-right opacity-0">
+                The City
+              </span>
             </span>
-            <span className="flex flex-row space-x-3 sm:self-end lg:self-center">
+            <span className="flex flex-row space-x-3 sm:self-end lg:self-center fade-in-left opacity-0">
               <span className="sm:hidden">The City</span> <span>We love</span>
             </span>
           </h1>
@@ -181,7 +215,7 @@ export default function OutOfTown() {
           collapsible
           className="w-full max-w-[750px] self-center px-5"
         >
-          <AccordionItem value="item-1">
+          <AccordionItem value="item-1" className="fade-in-up">
             <AccordionTrigger>
               Our neighborhood of Outremont at a glance
             </AccordionTrigger>
@@ -197,7 +231,7 @@ export default function OutOfTown() {
               Estiatorio <br /> Milos <br /> St-Viateur Bagel <br />
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2">
+          <AccordionItem value="item-2" className="fade-in-up">
             <AccordionTrigger>Montreal at a glance</AccordionTrigger>
             <AccordionContent className="text-muted text-lg">
               Home to nearly 4.5 million people, Montreal is widely recognized
@@ -210,7 +244,7 @@ export default function OutOfTown() {
               world.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3">
+          <AccordionItem value="item-3" className="fade-in-up">
             <AccordionTrigger>Out go-to spots</AccordionTrigger>
             <AccordionContent className="text-muted text-lg">
               Time Out Market <br /> Old Montreal <br /> The Montreal Museum of
@@ -219,7 +253,7 @@ export default function OutOfTown() {
               (Contemporary Art Museum) <br /> Antique and Rare book stores
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-4">
+          <AccordionItem value="item-4" className="fade-in-up">
             <AccordionTrigger>
               Reserve a table at one of the city&apos;s beloved restaurants
             </AccordionTrigger>
@@ -228,7 +262,7 @@ export default function OutOfTown() {
               <br /> Moccione <br /> Tuck Shop <br /> Estiatorio Milos
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-5">
+          <AccordionItem value="item-5" className="fade-in-up">
             <AccordionTrigger>
               Book your online rhinoplasty consultation today
             </AccordionTrigger>

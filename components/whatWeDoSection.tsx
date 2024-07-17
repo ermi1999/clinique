@@ -4,8 +4,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import Button from "./button";
+import { Button } from "./ui/button";
 import { SmallHeadingContainer } from "./textContainers";
+import Link from "next/link";
 
 export default function WhatWeDo() {
   gsap.registerPlugin(ScrollTrigger);
@@ -36,12 +37,14 @@ export default function WhatWeDo() {
   return (
     <section className="flex flex-col items-center lg:mt-40 xl:mt-20">
       <div className="bg-white flex flex-col items-center space-y-5 z-40 w-[100vw] md:w-[95vw] what-we-do-section pb-40 md:pb-52">
-        <SmallHeadingContainer>What we do?</SmallHeadingContainer>
+        <SmallHeadingContainer className="fade-in-up opacity-0">
+          What we do?
+        </SmallHeadingContainer>
         <p className="flex flex-col font-general-sans-medium text-nowrap leading-none -space-y-3 sm:-space-y-5 text-5xl sm:text-7xl lg:text-8xl w-full px-5 max-w-[450px] sm:max-w-[600px] lg:max-w-[900px]">
-          <span className="text-left">Rhinoplasty</span>
-          <span className="text-right">
+          <span className="text-left fade-in-left opacity-0">Rhinoplasty</span>
+          <span className="text-right fade-in-right opacity-0">
             as a{" "}
-            <span className="font-bold-italic text-6xl sm:text-8xl lg:text-9xl">
+            <span className="font-bold-italic text-6xl sm:text-8xl lg:text-9xl fade-in-right opacity-0">
               Speciality
             </span>
           </span>
@@ -74,20 +77,22 @@ export default function WhatWeDo() {
           </div>
           <div className="flex flex-col font-general-sans-medium w-full space-y-5">
             <p className="flex flex-col max-w-[500px] sm:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] text-nowrap self-center w-full">
-              <span className="self-start">Choose a rhinoplasty surgeon</span>
+              <span className="self-start fade-in-left opacity-0">
+                Choose a rhinoplasty surgeon
+              </span>
 
-              <span className="self-end font-bold-italic -my-3 text-3xl sm:text-5xl lg:text-7xl xl:text-[4rem]">
+              <span className="self-end font-bold-italic -my-3 text-3xl sm:text-5xl lg:text-7xl xl:text-[4rem] fade-in-right opacity-0">
                 with the highest level
               </span>
-              <span className="self-center">
+              <span className="self-center fade-in-right opacity-0">
                 of training, experience and skill.
               </span>
             </p>
-            <div className="w-[90%] flex items-end justify-end">
-              <Button className="text-sm md:text-base font-light w-52 md:w-60">
+            <a href="/drchacra" className="w-[90%] flex items-end justify-end">
+              <Button className="text-sm md:text-base font-light w-52 md:w-60 rounded-3xl">
                 Meet Dr.Zahi Abou Chacra
               </Button>
-            </div>
+            </a>
           </div>
           <div className="relative self-start pl-5 h-40 w-40 md:h-52 md:w-52">
             <Image

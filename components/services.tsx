@@ -11,15 +11,20 @@ export default function Services() {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
   return (
     <div className="flex flex-col w-full px-4 md:px-10">
-      <SmallHeadingContainer>OUR SERVICES</SmallHeadingContainer>
+      <SmallHeadingContainer className="fade-in-up opacity-0">
+        OUR SERVICES
+      </SmallHeadingContainer>
       <LargeTextContainer>
-        <span className="w-full self-start md:self-end md:justify-end flex flex-col md:flex-row -space-y-2 sm:-space-y-4 md:space-x-3">
+        <span className="w-full self-start md:self-end md:justify-end flex flex-col md:flex-row -space-y-2 sm:-space-y-4 md:space-x-3 fade-in-right opacity-0">
           <span className="self-start">
             A <LargeItalicText>boutique</LargeItalicText>
           </span>{" "}
           <span className="self-end">experience</span>
         </span>
-        <span className="flex flex-col md:flex-row -space-y-2 sm:-space-y-4 md:self-start md:space-y-0 md:space-x-3">
+        <span
+          className="flex flex-col md:flex-row -space-y-2 sm:-space-y-4 md:self-start md:space-y-0 md:space-x-3
+fade-in-left opacity-0"
+        >
           <span className="self-start">Made-to-measure </span>
           <span className="self-center text-start w-60 sm:w-72 md:w-auto">
             results

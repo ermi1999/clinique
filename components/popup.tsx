@@ -35,8 +35,10 @@ export default function Popup({ className }: PopupInterface) {
         </DialogTrigger>
         <DialogContent className="dialog flex items-center justify-center flex-col w-[75vw] xl:w-[55vw] space-y-5">
           <DialogHeader className="text-5xl font-general-sans-medium flex flex-row">
-            We love{" "}
-            <span className="font-bold-italic ml-4 text-7xl">your face</span>
+            <span className="animate-fadeinleft">We love</span>{" "}
+            <span className="font-bold-italic ml-4 text-7xl animate-fadeinright">
+              your face
+            </span>
           </DialogHeader>
           <PopupContent />
         </DialogContent>
@@ -53,8 +55,10 @@ export default function Popup({ className }: PopupInterface) {
       </DrawerTrigger>
       <DrawerContent className="flex items-center space-y-1 px-5 h-full max-h-[95vh] pb-3">
         <DrawerHeader className="text-5xl font-general-sans-medium flex flex-col w-80">
-          <span className="w-full text-left -my-7">We love</span>
-          <span className="font-bold-italic text-5xl w-full text-end leading-none">
+          <span className="w-full text-left -my-7 animate-fadeinleft">
+            We love
+          </span>
+          <span className="font-bold-italic text-5xl w-full text-end leading-none animate-fadeinright">
             your face
           </span>
         </DrawerHeader>

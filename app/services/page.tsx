@@ -29,14 +29,18 @@ export default function Services() {
         className="flex flex-col items-center space-y-5 leading-none w-[300px] sm:w-[450px] md:w-[700px] lg:w-[800px]"
         ref={container}
       >
-        <SmallHeadingContainer>Our services</SmallHeadingContainer>
+        <SmallHeadingContainer className="animate-fadeindown">
+          Our services
+        </SmallHeadingContainer>
         <h1 className="flex flex-col font-general-sans-medium text-2xl sm:text-4xl md:text-5xl w-full services-header">
-          <span className="font-bold-italic text-6xl sm:text-8xl lg:text-9xl">
+          <span className="font-bold-italic text-6xl sm:text-8xl lg:text-9xl animate-fadeinleft">
             Rhinoplasty{" "}
           </span>
-          <span className="self-end">by Dr. Zahi Abou Chacra</span>
+          <span className="self-end animate-fadeinright">
+            by Dr. Zahi Abou Chacra
+          </span>
         </h1>
-        <p className="w-[200px] font-medium self-start services-header">
+        <p className="w-[200px] font-medium self-start services-header animate-fadeinleft">
           Boutique experience. Breathtaking results.
         </p>
       </div>

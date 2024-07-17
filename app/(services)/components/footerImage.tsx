@@ -14,7 +14,7 @@ export default function FooterImage({
     <div className="flex flex-col w-full space-y-5">
       <div
         className={cn(
-          "self-center relative w-[300px] sm:w-[374px] h-[400px] sm:h-[498px]",
+          "self-center relative w-[300px] sm:w-[374px] h-[400px] sm:h-[498px] fade-in-up opacity-0",
           className
         )}
       >

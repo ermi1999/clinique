@@ -29,16 +29,20 @@ export default function WorkProcess() {
       <div className="absolute z-30 w-full px-2">
         <div className="w-full bg-white rounded-3xl lg:rounded-4xl flex flex-col xl:flex-row xl:justify-between font-general-sans-medium items-center justify-center space-y-10 p-10">
           <p className="hidden xl:flex flex-col w-full text-5xl xl:max-w-[800px] leading-none">
-            <span className="self-center">As great work is often</span>
-            <span className="self-end">
+            <span className="self-center fade-in-left opacity-0">
+              As great work is often
+            </span>
+            <span className="self-end fade-in-right opacity-0">
               the culmination{" "}
               <span className="font-bold-italic text-[2rem] sm:text-[3.75rem] leading-none">
                 of
               </span>{" "}
               both{" "}
             </span>
-            <span className="self-start">applied skill and wonder,</span>{" "}
-            <span className="self-center">
+            <span className="self-start fade-in-left opacity-0">
+              applied skill and wonder,
+            </span>{" "}
+            <span className="self-center fade-in-right opacity-0">
               so is{" "}
               <span className="font-bold-italic text-[2rem] sm:text-[3.75rem] leading-none">
                 The Art
@@ -72,10 +76,12 @@ export default function WorkProcess() {
             isDesktop ? "card_container" : "some"
           )}
         >
-          <SmallHeadingContainer>TAILORED RESULTS</SmallHeadingContainer>
+          <SmallHeadingContainer className="fade-in-up opacity-0">
+            TAILORED RESULTS
+          </SmallHeadingContainer>
           <h1 className="flex flex-col w-full pb-14 max-w-[320px] sm:max-w-[600px] md:w-[450px] lg:w-[600px] text-[2.50rem] sm:text-[4.7rem] md:text-7xl lg:text-8xl text-nowrap lg:self-end leading-none font-general-sans-medium -space-y-2 sm:-space-y-4">
-            <span>Rhinoplasty</span>{" "}
-            <span className="self-end">
+            <span className="fade-in-left opacity-0">Rhinoplasty</span>{" "}
+            <span className="self-end fade-in-right opacity-0">
               at-a-
               <span className="font-bold-italic text-[3rem] sm:text-[5.2rem] md:text-[5rem] lg:text-[6.5rem]">
                 glance

@@ -22,7 +22,7 @@ export default function Piece({
 }: PieceInterface) {
   return (
     <div className="w-full h-full relative cursor-pointer">
-      <Link href={href ? href : "/"}>
+      <a href={href ? href : "/"}>
         <div className="absolute h-full w-full bg-black/10 lg:bg-black/45 xl:bg-transparent xl:hover:bg-black/45 *:*:*:*:hover:opacity-100 z-10 rounded-xl lg:rounded-3xl transition-all">
           <div
             className={cn(
@@ -73,7 +73,7 @@ export default function Piece({
           alt="background image"
           className="relative rounded-xl lg:rounded-3xl h-full w-full object-cover object-center"
         />
-      </Link>
+      </a>
     </div>
   );
 }

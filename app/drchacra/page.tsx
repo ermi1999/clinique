@@ -17,15 +17,15 @@ export default function DrChacra() {
             className="flex flex-col text-[3rem] sm:text-6xl lg:text-8xl font-general-sans-medium
           -space-y-5 sm:-space-y-7 leading-none w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[600px]"
           >
-            <span className="self-start">Rhinoplasty </span>
+            <span className="self-start animate-fadeinleft">Rhinoplasty </span>
             <span className="self-end">
               as a{" "}
-              <span className="font-bold-italic text-7xl sm:text-8xl lg:text-9xl">
+              <span className="font-bold-italic text-7xl sm:text-8xl lg:text-9xl animate-fadeinright">
                 craft
               </span>
             </span>
           </h1>
-          <p className="text-pretty text-center sm:text-start text-off-dark font-medium leading-none flex flex-col space-y-3 w-[300px] sm:w-[400px] lg:w-[300px] lg:self-center">
+          <p className="text-pretty text-center sm:text-start text-off-dark font-medium leading-none flex flex-col space-y-3 w-[300px] sm:w-[400px] lg:w-[300px] lg:self-center animate-fadeinleft">
             <span>
               Dr. Chacra’s craft as a surgeon reflects a distinct penchant for
               excellence which comes to life through mastery and talent. <br />
@@ -37,7 +37,7 @@ export default function DrChacra() {
             </span>
           </p>
         </div>
-        <div className="w-[340px] h-[340px] sm:w-[440px] sm:h-[440px] lg:w-[500px] relative mb-10">
+        <div className="w-[340px] h-[340px] sm:w-[440px] sm:h-[440px] lg:w-[500px] relative mb-10 animate-fadeindown">
           <Image
             src="/resources/drchacra.jpg"
             alt="Dr. chacra"
@@ -52,8 +52,10 @@ export default function DrChacra() {
             className="flex flex-col text-4xl sm:text-6xl lg:text-8xl font-general-sans-medium
           -space-y-5 lg:-space-y-10 leading-none w-full max-w-[300px] sm:max-w-[500px] lg:max-w-[750px] self-center lg:self-start"
           >
-            <span className="self-start">A renowned</span>
-            <span className="self-end">
+            <span className="self-start fade-in-left opacity-0">
+              A renowned
+            </span>
+            <span className="self-end fade-in-right opacity-0">
               nasal{" "}
               <span className="font-bold-italic text-5xl sm:text-7xl lg:text-9xl">
                 specialist
@@ -116,17 +118,17 @@ export default function DrChacra() {
             className="flex flex-col text-4xl sm:text-6xl lg:text-8xl font-general-sans-medium
           -space-y-3 lg:-space-y-10 leading-none w-full max-w-[300px] sm:max-w-[500px] lg:max-w-[750px] self-center lg:self-start"
           >
-            <span className="self-start">
+            <span className="self-start fade-in-left opacity-0">
               <span className="font-bold-italic text-5xl sm:text-7xl lg:text-9xl">
                 Education
               </span>{" "}
               and
             </span>
-            <span className="self-end">background</span>
+            <span className="self-end fade-in-right opacity-0">background</span>
           </h1>
           <div className="flex flex-col lg:flex-row lg:justify-between w-full space-y-10 items-center lg:items-start lg:space-y-0">
             <div className="flex flex-col items-start">
-              <strong className="text-pretty leading-5 max-w-[400px] sm:max-w-[500px]">
+              <strong className="text-pretty leading-5 max-w-[400px] sm:max-w-[500px] fade-in-up opacity-0">
                 <strong className="uppercase">Education and background</strong>
                 <br />
                 <br />
@@ -184,7 +186,7 @@ export default function DrChacra() {
       </section>
       <section className="flex flex-col w-full items-center space-y-10 max-w-[1100px] px-4 lg:px-10 xl:px-0">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:w-[50%] lg:self-end items-center">
-          <SmallHeadingContainer className="uppercase lg:self-center">
+          <SmallHeadingContainer className="uppercase lg:self-center fade-in-up opacity-0">
             Our story
           </SmallHeadingContainer>
           <div className="w-[300px] h-[200px] md:w-[500px] md:h-[400px] lg:w-[262px] lg:h-[262px] lg:self-end relative">
@@ -201,8 +203,10 @@ export default function DrChacra() {
           className="flex flex-col text-4xl sm:text-6xl lg:text-8xl font-general-sans-medium
           -space-y-5 lg:-space-y-10 leading-none w-full max-w-[300px] sm:max-w-[500px] lg:max-w-[750px] self-center lg:self-start"
         >
-          <span className="self-start">Over a decade</span>
-          <span className="self-end">
+          <span className="self-start fade-in-left opacity-0">
+            Over a decade
+          </span>
+          <span className="self-end fade-in-right opacity-0">
             of{" "}
             <span className="font-bold-italic text-5xl sm:text-7xl lg:text-9xl">
               experience
@@ -236,21 +240,21 @@ export default function DrChacra() {
             </p>
           </div>
           <div className="flex flex-wrap"></div>
-          <Link
+          <a
             href="/services"
             className="self-center sm:self-start lg:self-center"
           >
             <Button className="uppercase rounded-3xl bg-black">
               Our solutions
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
       <section className="flex flex-col space-y-10 sm:space-y-20">
         <h1 className="flex flex-col text-center text-balance text-4xl sm:text-6xl lg:text-8xl font-general-sans-medium leading-none w-full max-w-[300px] sm:max-w-[500px] lg:max-w-[850px] self-center">
           Past and Present Positions
         </h1>
-        <div className="flex flex-col lg:flex-row lg:w-full lg:justify-between font-semibold text-lg text-center lg:text-balance text-pretty space-y-10 lg:space-y-0 lg:space-x-10 leading-none w-[300px] sm:w-[400px] max-w-[1100px] self-center">
+        <div className="flex flex-col lg:flex-row lg:w-full lg:justify-between font-semibold text-lg text-center lg:text-balance text-pretty space-y-10 lg:space-y-0 lg:space-x-10 leading-none w-[300px] sm:w-[400px] max-w-[1100px] self-center fade-in-up opacity-0">
           <p>
             Chief of Service at the Centre Intégré Universitaire de Santé et de
             Services Sociaux du Nord de l’Ile de Montréal
@@ -268,7 +272,7 @@ export default function DrChacra() {
           {images.map((image, i) => (
             <div
               key={i}
-              className="relative w-[147px] h-[80px] sm:w-[193px] sm:h-[105px] lg:w-[200px] lg:h-[109px] m-3"
+              className="relative w-[147px] h-[80px] sm:w-[193px] sm:h-[105px] lg:w-[200px] lg:h-[109px] m-3 fade-in-up opacity-0"
             >
               <Image
                 alt="logo"

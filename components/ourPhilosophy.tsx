@@ -42,10 +42,14 @@ export default function OurPhilosophy() {
             </BluryCard>
           </div>
           <div className="w-[100vw] lg:w-[55vw] px-10 text-primary-foreground font-semibold flex flex-col items-center justify-center lg:items-start lg:justify-start lg:px-10 z-10">
-            <h1>OUR PHILOSOPHY</h1>
+            <h1 className="fade-in-up opacity-0">OUR PHILOSOPHY</h1>
             <h2 className="w-full max-w-[600px] lg:max-w-[800px] mt-10 text-5xl md:text-7xl lg:text-[90px] flex flex-col">
-              <span className="font-italic">The art of</span>
-              <span className="text-end font-general-sans">Rhinoplasty</span>
+              <span className="font-italic fade-in-left opacity-0">
+                The art of
+              </span>
+              <span className="text-end font-general-sans fade-in-right opacity-0">
+                Rhinoplasty
+              </span>
             </h2>
             <p className="w-full md:w-[70%] lg:w-full max-w-[550px] mt-10 flex flex-col font-semibold lg:font-bold lg:text-lg text-white">
               <span className="text-end">
@@ -64,11 +68,11 @@ export default function OurPhilosophy() {
                 alt="doctor doing a surgery"
                 className="object-contain h-28 w-28 mr-3 mb-2 rounded-xl"
               />
-              <p className="w-full self-end">
+              <p className="w-full self-end fade-in-up opacity-0">
                 Dr. Chacra believes that rhinoplasty,
               </p>
             </div>
-            <p>
+            <p className="fade-in-up opacity-0">
               plastic surgery and nose reconstruction are not just medical
               procedures but an art that requires passion and precision.
             </p>

@@ -62,7 +62,7 @@ export default function BeforeAndAfter() {
   };
   return (
     <section className="h-full w-full bg-fade-in-white py-10">
-      <h1 className="w-full text-center font-medium mt-10 mb-5">
+      <h1 className="w-full text-center font-medium mt-10 mb-5 fade-in-up opacity-0">
         BEFORE AND AFTER
       </h1>
       <div className="px-10 md:px-16 lg:px-20 flex flex-col md:flex-row justify-between">
@@ -74,8 +74,10 @@ export default function BeforeAndAfter() {
             CLICK ON PHOTOS TO SEE THE BEFORE
           </p>
           <p className="flex flex-col text-6xl md:text-7xl lg:text-8xl w-full font-general-sans max-w-96">
-            <span className="-my-4">Simply</span>
-            <span className="font-bold-italic text-right">Sculpted</span>
+            <span className="-my-4 fade-in-left opacity-0">Simply</span>
+            <span className="font-bold-italic text-right fade-in-right opacity-0">
+              Sculpted
+            </span>
           </p>
         </div>
         <div className="flex flex-row space-x-5 self-end">
