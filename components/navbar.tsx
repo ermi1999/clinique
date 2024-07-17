@@ -120,11 +120,12 @@ export default function Navbar() {
                 "
     >
       <div className="w-full flex flex-row justify-between px-4 py-2 items-center">
-        <a href="/">
-          <img
+        <a href="/" className="relative h-14 w-14 md:w-16 md:h-16">
+          <Image
             alt="logo image"
             src="/resources/logo.png"
-            className="h-14 w-14 md:h-16 md:w-16 animate-spin"
+            className="object-conver animate-spin"
+            fill
           />
         </a>
         <div
