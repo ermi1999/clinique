@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { LargeItalicText, LargeTextContainer } from "./textContainers";
 import Image from "next/image";
 import ContactUs from "./contactUs";
 

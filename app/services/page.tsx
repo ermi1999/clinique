@@ -24,7 +24,7 @@ export default function Services() {
     { scope: container }
   );
   return (
-    <main className="flex flex-col py-32 px-5 space-y-20 w-full justify-center items-center">
+    <main className="flex flex-col py-32 px-5 space-y-20 w-full justify-center items-center overflow-hidden">
       <div
         className="flex flex-col items-center space-y-5 leading-none w-[300px] sm:w-[450px] md:w-[700px] lg:w-[800px]"
         ref={container}

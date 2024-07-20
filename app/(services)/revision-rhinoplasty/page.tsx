@@ -7,7 +7,7 @@ import FooterImage from "../components/footerImage";
 
 export default function RevisionRhinoplasty() {
   return (
-    <main className="flex flex-col items-center py-32 space-y-32">
+    <main className="flex flex-col items-center py-32 space-y-32 overflow-hidden">
       <ServicesHeader
         smallHeading="Our services"
         italicHeader="Revision Rhinoplasty"

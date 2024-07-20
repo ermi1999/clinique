@@ -1,6 +1,5 @@
 import { Heading, ParagraphWrapper } from "@/components/textContainers";
 import Image from "next/image";
-import Link from "next/link";
 import Popup from "@/components/popup";
 import { Button } from "@/components/ui/button";
 import ServicesHeader from "../components/servicesHeader";
@@ -10,7 +9,7 @@ import FooterImage from "../components/footerImage";
 
 export default function PrimaryRhinoplasty() {
   return (
-    <main className="flex flex-col items-center py-32 space-y-32">
+    <main className="flex flex-col items-center py-32 space-y-32 overflow-hidden">
       <ServicesHeader
         smallHeading="Our services"
         italicHeader="Primary Rhinoplasty"
@@ -413,8 +412,7 @@ export default function PrimaryRhinoplasty() {
             <br />
             <p>
               If you do not live in The Greater Montreal area, please consult
-              our Out of Town tab, or click{" "}
-              <Link href="/out-of-town">here</Link>.
+              our Out of Town tab, or click <a href="/out-of-town">here</a>.
             </p>
             <br />
             <br />

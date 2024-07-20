@@ -215,7 +215,7 @@ export default function OutOfTown() {
           collapsible
           className="w-full max-w-[750px] self-center px-5"
         >
-          <AccordionItem value="item-1" className="fade-in-up">
+          <AccordionItem value="item-1" className="fade-in-up opacity-0">
             <AccordionTrigger>
               Our neighborhood of Outremont at a glance
             </AccordionTrigger>
@@ -231,7 +231,7 @@ export default function OutOfTown() {
               Estiatorio <br /> Milos <br /> St-Viateur Bagel <br />
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2" className="fade-in-up">
+          <AccordionItem value="item-2" className="fade-in-up opacity-0">
             <AccordionTrigger>Montreal at a glance</AccordionTrigger>
             <AccordionContent className="text-muted text-lg">
               Home to nearly 4.5 million people, Montreal is widely recognized
@@ -244,7 +244,7 @@ export default function OutOfTown() {
               world.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3" className="fade-in-up">
+          <AccordionItem value="item-3" className="fade-in-up opacity-0">
             <AccordionTrigger>Out go-to spots</AccordionTrigger>
             <AccordionContent className="text-muted text-lg">
               Time Out Market <br /> Old Montreal <br /> The Montreal Museum of
@@ -253,7 +253,7 @@ export default function OutOfTown() {
               (Contemporary Art Museum) <br /> Antique and Rare book stores
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-4" className="fade-in-up">
+          <AccordionItem value="item-4" className="fade-in-up opacity-0">
             <AccordionTrigger>
               Reserve a table at one of the city&apos;s beloved restaurants
             </AccordionTrigger>
@@ -262,7 +262,7 @@ export default function OutOfTown() {
               <br /> Moccione <br /> Tuck Shop <br /> Estiatorio Milos
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-5" className="fade-in-up">
+          <AccordionItem value="item-5" className="fade-in-up opacity-0">
             <AccordionTrigger>
               Book your online rhinoplasty consultation today
             </AccordionTrigger>

@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { Button } from "./ui/button";
 import { SmallHeadingContainer } from "./textContainers";
-import Link from "next/link";
 
 export default function WhatWeDo() {
   gsap.registerPlugin(ScrollTrigger);

@@ -7,7 +7,7 @@ import FooterImage from "../components/footerImage";
 
 export default function LiuidRhinoplasty() {
   return (
-    <main className="flex flex-col items-center py-32 space-y-28">
+    <main className="flex flex-col items-center py-32 space-y-28 overflow-hidden">
       <ServicesHeader
         smallHeading="Our services"
         italicHeader="Liquid Rhinoplasty"

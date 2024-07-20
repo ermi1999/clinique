@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function FooterImage({
   imageUrl,
@@ -25,11 +24,11 @@ export default function FooterImage({
           className="rounded-3xl sm:rounded-4xl object-cover"
         />
       </div>
-      <Link href="/contactus" className="self-center">
+      <a href="/contactus" className="self-center">
         <Button className="rounded-3xl min-w-[140px] sm:min-w-[170px] sm:min-h-[55px] sm:rounded-4xl sm:text-lg">
           Contact Us
         </Button>
-      </Link>
+      </a>
     </div>
   );
 }

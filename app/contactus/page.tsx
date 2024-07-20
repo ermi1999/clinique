@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Contacts() {
   return (
-    <main className="flex flex-col py-32 space-y-32 items-center">
+    <main className="flex flex-col py-32 space-y-32 items-center overflow-hidden">
       <div className="flex flex-col w-full self-center space-y-10 max-w-[340px] sm:max-w-[635px] md:max-w-[720px] lg:max-w-[950px] xl:max-w-[1100px]">
         <h1 className="self-center font-general-sans-medium text-5xl sm:text-7xl lg:text-8xl flex flex-col w-full -space-y-3 sm:-space-y-7 lg:-space-y-10 lg:self-start animate-fadeinleft">
           <span className="flex flex-col -space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3">
